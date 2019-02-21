@@ -5,6 +5,8 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
+    <router-view name="named_view1"/>
+    <router-view name="named_view2"/>
   </div>
 </template>
 
