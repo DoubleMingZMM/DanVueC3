@@ -73,5 +73,9 @@ export default [
     path: '/alias',
     alias: '/alias_name',
     component: () => import('@/views/alias.vue')
+  },
+  {
+    path: '/form',
+    component: () => import('@/views/form.vue')
   }
 ]
