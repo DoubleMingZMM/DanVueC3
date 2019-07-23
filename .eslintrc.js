@@ -15,7 +15,7 @@ module.exports = {
     'vue/require-valid-default-prop': 'off',
     'vue/require-default-prop': 'off'
   },
-  // 在使用 Vue eslint 的时候，不能在外层写 parser: 'babel-eslint'
+  // 在使用 Vue eslint 的时候，不能在外层写 parser: 'babel-eslint',移到 parserOptions 里面
   parserOptions: {
     parser: 'babel-eslint',
     ecmaVersion: 2017,
