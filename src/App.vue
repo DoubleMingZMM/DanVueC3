@@ -1,12 +1,16 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">
+        Home
+      </router-link> |
+      <router-link to="/about">
+        About
+      </router-link>
     </div>
-    <router-view/>
-    <router-view name="named_view1"/>
-    <router-view name="named_view2"/>
+    <router-view />
+    <router-view name="named_view1" />
+    <router-view name="named_view2" />
   </div>
 </template>
 

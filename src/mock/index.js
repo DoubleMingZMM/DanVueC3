@@ -1,5 +1,5 @@
-import Mock from 'mockjs'
+import Mock from 'mockjs';
 
 // 
 
-export default Mock
+export default Mock;

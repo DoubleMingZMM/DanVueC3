@@ -1,6 +1,6 @@
 <template>
-    <div>
-        I am parent
-        <router-view/>
-    </div>
-</template>
+  <div>
+    I am parent
+    <router-view />
+  </div>
+</template>;

@@ -1,11 +1,12 @@
 {
-  "name": "danvuec3",
+  "name": "DanVView",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "eslint --ext .js,.vue src",
+    "lint-fix": "eslint --fix --ext .js,.vue src"
   },
   "dependencies": {
     "vue": "^2.5.22",
@@ -14,12 +15,12 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.4.0",
-    "@vue/cli-plugin-eslint": "^3.4.0",
     "@vue/cli-service": "^3.4.0",
-    "@vue/eslint-config-standard": "^4.0.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
-    "eslint-plugin-vue": "^5.0.0",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.1.0",
+    "eslint-config-daniel": "^1.0.5",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-vue": "^5.2.3",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
     "mockjs": "^1.0.1-beta3",

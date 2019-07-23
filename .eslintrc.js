@@ -3,15 +3,23 @@ module.exports = {
   env: {
     node: true
   },
-  'extends': [
-    'plugin:vue/essential',
-    '@vue/standard'
+  // vue 项目无法使用定制的 eslint-config-daniel/vue 的写法，故需要自定义
+  extends: [
+    'eslint-config-daniel',
+    'plugin:vue/recommended'
   ],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'vue/require-valid-default-prop': 'off',
+    'vue/require-default-prop': 'off'
   },
   parserOptions: {
-    parser: 'babel-eslint'
-  }
+    parser: 'babel-eslint',
+    ecmaVersion: 2017,
+    sourceType: "module"
+  },
+  plugins: [
+    'vue'
+  ]
 }

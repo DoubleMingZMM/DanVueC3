@@ -1,4 +1,4 @@
-import Home from '@/views/Home.vue'
+import Home from '@/views/Home.vue';
 
 export default [
   {
@@ -53,7 +53,7 @@ export default [
   {
     path: '/log1',
     redirect: () => {
-      return '/about'
+      return '/about';
     }
   },
   {
@@ -61,7 +61,7 @@ export default [
     redirect: () => {
       return {
         name: 'parameter'
-      }
+      };
     }
   },
   {
@@ -78,4 +78,4 @@ export default [
     path: '/form',
     component: () => import('@/views/form.vue')
   }
-]
+];
